@@ -11,8 +11,12 @@ class Admin::ExamsController < ApplicationController
 
   def show
     # @questions = @exam.questions.paginate(page: params[:page], per_page: Settings.paginate.manage)
+<<<<<<< HEAD
     @questions = Question.includes(:exam).where(exam_id: @exam.id)
                          .order_by_content.paginate(page: params[:page], per_page: Settings.paginate.manage)
+=======
+    @questions = @exam.questions.order_by_content.paginate(page: params[:page], per_page: Settings.paginate.manage)
+>>>>>>> Create Index Questions
   end
 
   def create
