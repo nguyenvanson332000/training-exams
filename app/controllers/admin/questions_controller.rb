@@ -1,12 +1,8 @@
 class Admin::QuestionsController < ApplicationController
-<<<<<<< HEAD
-  before_action :load_exam, only: %i(new create)
+  before_action :load_exam, only: %i(new create edit update destroy)
+  before_action :load_question, only: %i(edit update destroy)
+
   def new
-=======
-  before_action :load_exam, only: %i(create)
-  def new
-    @exam = Exam.find_by(id: params[:exam_id])
->>>>>>> Create Index Questions
     @question = @exam.questions.new
   end
 
@@ -16,11 +12,30 @@ class Admin::QuestionsController < ApplicationController
       flash[:success] = t "controller.admin.create_question_success"
       redirect_to admin_exam_path(@exam)
     else
-<<<<<<< HEAD
       flash[:danger] = t "controller.admin.create_question_fail"
-=======
-      flash[:danger] = t"controller.admin.create_question_fail"
->>>>>>> Create Index Questions
+      redirect_to admin_exam_path(@exam)
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    if @question.update question_params
+      flash[:success] = "Cập nhật thành công"
+      redirect_to admin_exam_path(@exam)
+    else
+      flash[:danger] =  "Cập nhật thất bại"
+      redirect_to admin_exam_path(@exam)
+    end
+  end
+
+  def destroy
+    if @question.destroy
+      flash[:success] = "Xóa thành công"
+      redirect_to admin_exam_path(@exam)
+    else
+      flash[:danger] = "Xóa thất bại"
       redirect_to admin_exam_path(@exam)
     end
   end
@@ -37,5 +52,14 @@ class Admin::QuestionsController < ApplicationController
 
     flash[:warning] = t "controller.admin.load_exam_fail"
     redirect_to root_path
+  end
+
+  def load_question
+    @question = Question.find_by(id: params[:id])
+    return if @question
+
+    flash[:warning] = "Không tìm thấy câu hỏi"
+    redirect_to root_path
+
   end
 end

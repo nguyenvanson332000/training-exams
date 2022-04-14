@@ -104,8 +104,16 @@ en:
         time_limit: "Time Limit (minutes):"
         pass_score: "Pass Score:"
         btn_create_questions: "Create Questions"
+      exam_question:
+        btn_edit: "Edit"
+        btn_delete: "Delete"
+        confirm: "Are you sure ?"
     questions:
-      form_question:
+      form_create_question:
         label_ques: "Question ?"
         placeholder: "please create question..."
         btn_submit: "Create Question"
+      form_edit_question:
+        label_ques: " Update Question "
+        placeholder: "please update question"
+        btn_submit: "Update Question"

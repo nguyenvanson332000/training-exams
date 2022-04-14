@@ -14,8 +14,4 @@
         = t(".time_limit")
         = @exam.time_limit
     = link_to t(".btn_create_questions"), new_admin_exam_question_path(exam_id: @exam.id), remote: true, class: "btn btn-success btn-create-question"
-<<<<<<< HEAD
 = render partial: 'exam_question'
-=======
-= render partial: 'admin/questions/question', locals: { exam: @exam }
->>>>>>> Create Index Questions

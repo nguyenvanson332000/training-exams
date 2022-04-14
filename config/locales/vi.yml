@@ -104,8 +104,16 @@ vi:
         time_limit: "Thời gian giới hạn (phút):"
         pass_score: "Điểm vượt qua:"
         btn_create_questions: "Tạo Câu Hỏi Mới"
+      exam_question:
+        btn_edit: "Chỉnh Sửa"
+        btn_delete: "Gỡ Bỏ"
+        confirm: "Bạn Chắc Chắn Gỡ Câu Hỏi?"
     questions:
-      form_question:
+      form_create_question:
         label_ques: "Đặt Câu Hỏi ?"
         placeholder: "Vui Lòng Đặt Câu Hỏi..."
         btn_submit: "Tạo Câu Hỏi"
+      form_edit_question:
+        label_ques: " Cập Nhật Câu Hỏi "
+        placeholder: "Vui lòng cập nhật Câu Hỏi ..."
+        btn_submit: "Cập Nhật Câu Hỏi"

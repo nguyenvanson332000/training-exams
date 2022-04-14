@@ -32,11 +32,7 @@ class UsersController < ApplicationController
       flash[:success] = "Profile updated"
       redirect_to @user
     else
-<<<<<<< HEAD
       render :edit
-=======
-      render "edit"
->>>>>>> Create Index Questions
     end
   end
 
