@@ -157,3 +157,8 @@ vi:
         label_ans: "Câu Trả Lời :"
         placeholder: "Vui lòng nhập câ trả lời..."
         btn_submit: "Cập Nhật Câu Trả Lời"
+  user:
+    exams:
+      show:
+        login_name: "VUi lòng Đăng Nhập : "
+        login_click: "Kích tại link này"

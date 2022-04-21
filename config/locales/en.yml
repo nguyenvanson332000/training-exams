@@ -157,3 +157,8 @@ en:
         label_ans: "Answer :"
         placeholder: "please edit answer..."
         btn_submit: "Update Answer"
+  user:
+    exams:
+      show:
+        login_name: "Please Login : "
+        login_click: "Click on here"
