@@ -1,4 +1,4 @@
-<div class="center jumbotron exam-show col-lg-9"></div>
+<%= render partial: "header_show" %>
 <div class="center col-lg-12 exam-question">
   <div class="hidden value-time"><%= @exam.time_limit %></div>
   <div class="timer"></div>
@@ -13,7 +13,7 @@
                 <% @answers.each do |answer| %>
                   <% if answer.question_id == question.id%>
                     <li class="answer-user-li">
-                      <input type="radio" id="<%= answer.content%>" name="<%= question.content %>" class= "radio-btn">
+                      <input type="radio" id="<%= answer.content%>" name="<%= question.id %>" class= "radio-btn">
                       <label for="<%= answer.content%>"><%= answer.content %></label><br>
                     </li>
                   <% end %>
@@ -23,7 +23,7 @@
           </div>
         <% end %>
       </ul>
-      <%= link_to "Nop Bai", "#",  class: "btn btn-primary btn-finish-exam", type: "button", data: {id: "#{@exam.id}"}%>
+      <%= button_tag t(".btn_submit"), class: "btn btn-primary btn-finish-exam", type: "button", data: {id: "#{@exam.id}"}%>
     </div>
   <% else %>
     <p>
