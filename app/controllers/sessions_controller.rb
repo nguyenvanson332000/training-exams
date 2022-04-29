@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SessionsController < ApplicationController
   def new; end
 
@@ -6,7 +8,7 @@ class SessionsController < ApplicationController
     if user&.authenticate params[:session][:password]
       login user
     else
-      flash.now[:danger] = t "flash.invalid"
+      flash.now[:danger] = t 'flash.invalid'
       render :new
     end
   end
@@ -18,9 +20,9 @@ class SessionsController < ApplicationController
 
   private
 
-  def login user
+  def login(user)
     log_in user
-    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+    params[:session][:remember_me] == '1' ? remember(user) : forget(user)
     # redirect_back_or user
     redirect_to root_url
   end

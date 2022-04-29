@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # require 'carrierwave/processing/mime_types'
 require 'mime/types'
 require 'carrierwave/orm/activerecord'

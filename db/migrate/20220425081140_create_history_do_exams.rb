@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateHistoryDoExams < ActiveRecord::Migration[6.0]
   def change
     create_table :history_do_exams do |t|

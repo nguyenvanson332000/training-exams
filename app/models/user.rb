@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   has_many :user_exams, dependent: :destroy
   has_many :history_do_exams, dependent: :destroy
@@ -20,17 +22,17 @@ class User < ApplicationRecord
   def authenticated?(attribute, token)
     digest = send("#{attribute}_digest")
     return unless digest
+
     BCrypt::Password.new(digest).is_password?(token)
   end
-
 
   class << self
     def digest(string)
       cost = if ActiveModel::SecurePassword.min_cost
-          BCrypt::Engine::MIN_COST
-        else
-          BCrypt::Engine.cost
-        end
+               BCrypt::Engine::MIN_COST
+             else
+               BCrypt::Engine.cost
+             end
       BCrypt::Password.create(string, cost: cost)
     end
 
