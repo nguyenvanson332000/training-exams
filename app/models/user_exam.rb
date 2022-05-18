@@ -4,4 +4,5 @@ class UserExam < ApplicationRecord
 
   scope :order_by_name, ->{order :name}
   scope :search_exam, ->(name) { where('name LIKE ?', "%#{name}%") if name.present?}
+  # scope :total_test_max, ~> {where{'max'}}
 end

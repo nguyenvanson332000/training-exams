@@ -114,9 +114,9 @@ footer {
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
-  background-size: 100% 100%;
-  margin-left: 325px;
-  margin-top: 52px;
+  background-size: 90% 97%;
+  margin-left: 285px;
+  margin-top: 22px;
   height: 370px;
 }
 
@@ -594,7 +594,7 @@ a.delete_user {
   width: 79px;
   text-align: center;
 }
-a.delete_user:hover{
+a.delete_user:hover {
   background-color: red;
 }
 // search
@@ -644,14 +644,14 @@ input.button--search:hover {
     right: 20%;
   }
   .avatar_edit {
-  margin: 15px 70px;
-  width: 50%;
-  height: 50%;
+    margin: 15px 70px;
+    width: 50%;
+    height: 50%;
     .avatar-user {
-        margin-left:50%;
-        width: 160px;
-        height: 160px;
-        border-radius: 20px;
+      margin-left: 50%;
+      width: 160px;
+      height: 160px;
+      border-radius: 20px;
     }
   }
 }
@@ -668,8 +668,8 @@ input.button--search:hover {
   padding: 24px 32px;
   border-radius: 30px;
   background: white;
-  margin-top: 64px;
-  margin-left: 48%;
+  margin-top: 240px;
+  margin-left: 35%;
   z-index: 2;
   box-shadow: 5px 5px 5px lightblue;
   position: fixed;
@@ -748,7 +748,7 @@ img.gravatar {
   border-radius: 20px;
   margin-bottom: 20px;
 }
-img.img_profile{
+img.img_profile {
   width: 160px;
   height: 160px;
   border-radius: 20px;
@@ -861,7 +861,7 @@ h1.header__left-name {
     width: 50px;
     height: 50px;
     float: left;
-    margin-right: 20px
+    margin-right: 20px;
   }
 }
 .marque {
@@ -913,6 +913,7 @@ h1.header__left-name {
   background-color: #eee;
   border-radius: 8px;
   position: relative;
+  margin-top: 20px;
 }
 
 footer {
@@ -962,7 +963,8 @@ ul.nav.navbar-nav.navbar-right a:after {
 
 ul.nav.navbar-nav.navbar-right a:hover:after {
   width: 80%;
-}ul.nav.navbar-nav.navbar-right a {
+}
+ul.nav.navbar-nav.navbar-right a {
   position: relative;
   font-weight: bold;
 }
@@ -983,29 +985,29 @@ ul.nav.navbar-nav.navbar-right a:hover:after {
 }
 
 .detail_user {
-    float: right;
-    width: 100px;
+  float: right;
+  width: 100px;
 }
 
 a.detail_user {
-    height: 37px;
-    background-color: #337ab7;
-    border-color: #2e6da4;
-    color: white;
-    font-weight: bold;
-    margin-top: 5px;
-    border-radius: 6px;
-    padding: 8px 0px;
-    width: 79px;
-    margin-right: 15px;
-    text-align: center;
+  height: 37px;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+  border-radius: 6px;
+  padding: 8px 0px;
+  width: 79px;
+  margin-right: 15px;
+  text-align: center;
 }
 
-a.detail_user:hover{
+a.detail_user:hover {
   background-color: #0088ff;
 }
 
-.avatar_profile{
+.avatar_profile {
   img.avatar-user {
     width: 160px;
     height: 160px;
@@ -1014,24 +1016,24 @@ a.detail_user:hover{
 }
 
 nav {
-    .pagination{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.title_exam{
+.title_exam {
   background-color: sandybrown;
 }
 tr.title_exam th {
-    text-align: center;
+  text-align: center;
 }
-tr td{
+tr td {
   text-align: center;
   margin-top: 15px;
 }
-td.td_exam{
+td.td_exam {
   margin: auto;
 }
 .col-lg-3 {
@@ -1041,17 +1043,17 @@ td.td_exam{
   box-sizing: border-box;
   margin-top: 26px;
   border-radius: 5px;
-  a{
+  a {
     color: white;
     font-weight: bold;
     text-decoration: none;
   }
-  .list-group-item1{
+  .list-group-item1 {
     position: relative;
     display: block;
     padding: 10px 10px;
     transition: all 0.2s linear;
-    a{
+    a {
       display: block;
       width: 200px;
       color: #fff;
@@ -1059,7 +1061,7 @@ td.td_exam{
     }
   }
 }
-.list-group-item1:hover{
+.list-group-item1:hover {
   // background-color: rgb(248, 248, 248);
   padding: 10px 18px;
   text-decoration: none;
@@ -1067,27 +1069,27 @@ td.td_exam{
 }
 
 .col-lg-3 h2 {
-    font-weight: bold;
-    color: #000;
+  font-weight: bold;
+  color: #000;
 }
 img.img-fluid {
-    object-fit: cover;
-    object-position: -48px 0;
+  object-fit: cover;
+  object-position: -48px 0;
 }
-.btn-primary{
+.btn-primary {
   font-size: 12px;
   margin-left: 20px;
 }
-.btn-danger{
+.btn-danger {
   font-size: 12px;
   margin-left: 20px;
 }
 input.btn.btn-lg.btn-success {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.new_user{
-  input{
+.new_user {
+  input {
     border-radius: 5px;
   }
 }
@@ -1096,53 +1098,55 @@ input.btn.btn-primary {
   margin-left: 0;
   margin-bottom: 4px;
 }
-.carousel-control.left{
+.carousel-control.left {
   background-image: none;
 }
-.carousel-control.right{
+.carousel-control.right {
   background-image: none;
 }
-.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
   width: 100%;
 }
-.panel{
+.panel {
   border: none;
   border-radius: 0;
-  background-color:#e4cefe ;
+  background-color: #e4cefe;
   margin-top: -26px;
 }
 .panel-heading {
   border-radius: 0;
   border: none;
-  h2{
-  color: black;
-  font-weight: bold;
+  h2 {
+    color: black;
+    font-weight: bold;
   }
 }
-.panel-default > .panel-heading{
-  background-color:#e4cefe ;
+.panel-default > .panel-heading {
+  background-color: #e4cefe;
 }
-.new_answer{
-  .form-group{
+.new_answer {
+  .form-group {
     background-color: white;
   }
 }
-// .edit_exam{
-//     position: absolute;
-//     top: 53px;
-//     width: 100%;
-//     background-color: #3f698d;
-//     .lable{
-//       text-align: center;
-//     }
-// }
-.center.jumbotron.home {
-    margin-top: 25px;
+.edit_exam_question {
+  position: absolute;
+  top: 53px;
+  width: 80%;
+  margin-top: 30px;
+  background-color: #3f698d;
+  .lable {
+    text-align: center;
+  }
 }
-.details_profile{
+.center.jumbotron.home {
+  margin-top: 25px;
+}
+.details_profile {
   margin-left: 30%;
 }
-.edit_examqsetion{
+.edit_examqsetion {
   margin-left: 28%;
   margin-top: 26px;
   width: 40%;
@@ -1151,23 +1155,26 @@ input.btn.btn-primary {
   border-radius: 15px 0 0 15px;
 }
 .edit_exam {
-  fieldset{
+  fieldset {
     width: 80%;
     margin-left: 50px;
   }
 }
 .new_exam {
-  fieldset{
+  fieldset {
     width: 80%;
     margin-left: 50px;
   }
 }
-.img_edit_exam{
-  .img-fluid{
+.img_edit_exam {
+  .img-fluid {
     margin-left: 31.7%;
     margin-top: 60px;
     object-position: 0;
     height: 450px;
     border-radius: 0px 15px 15px 0px;
   }
+}
+.dropdown.func-question {
+  margin-right: 10px;
 }

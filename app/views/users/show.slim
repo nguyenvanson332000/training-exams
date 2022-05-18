@@ -37,7 +37,7 @@
       .information_right
         h3
           | SỐ LẦN TEST
-        p= 0
+        p= @user.user_exams.maximum("total_test")
         h3
           | SỐ LẦN ĐẬU
         p 0
